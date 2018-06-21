@@ -64,7 +64,7 @@ class Position
                 }
                 return TRUE;
             case 1:
-                if ($$this->yPos - $size + 1 < 0) {
+                if ($this->yPos - $size + 1 < 0) {
                     return FALSE;
                 }
 
@@ -73,7 +73,7 @@ class Position
                 }
                 return TRUE;
             case 2:
-                if ($$this->xPos - $size + 1 < 0) {
+                if ($this->xPos - $size + 1 < 0) {
                     return FALSE;
                 }
 
@@ -82,7 +82,7 @@ class Position
                 }
                 return TRUE;
             case 3:
-                if ($$this->yPos + $size - 1 >= $limitY) {
+                if ($this->yPos + $size - 1 >= $limitY) {
                     return FALSE;
                 }
 
